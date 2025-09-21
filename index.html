@@ -648,13 +648,13 @@
         const addListBtn = document.getElementById('addListBtn');
         if (window.location.protocol === 'file:') {
             // Local execution (`file://` protocol)
-            addListBtn.textContent = 'リスト追加（Unit5）';
+            addListBtn.textContent = 'リスト追加';
             addListBtn.onclick = () => {
                 document.getElementById('localFileInput').click();
             };
         } else {
             // Web execution (`http:` or `https:`)
-            addListBtn.textContent = 'リストを選択';
+            addListBtn.textContent = 'リスト選択（Unit5）';
             addListBtn.onclick = openRepoModal;
         }
 
